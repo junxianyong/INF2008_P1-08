@@ -8,3 +8,9 @@ Scam Detection
 ```bash
 pip install -r requirements.txt
 ```
+
+# Generate dependencies
+```bash
+pip install pigar
+pigar generate
+```
