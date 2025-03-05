@@ -1,41 +1,41 @@
 Algorithm,Embedding,Type,y1_Accuracy,y1_Precision,y1_Recall,y1_F1_Score,y2_Accuracy,y2_Precision,y2_Recall,y2_F1_Score
-Logistic Regression,Count Vectorizer,Validation Set,0.8,0.95,0.64,0.77,0.61,0.56,0.61,0.55
-Logistic Regression,TF-IDF,Validation Set,0.8,0.95,0.65,0.77,0.61,0.53,0.61,0.53
-Logistic Regression,Word2Vec,Validation Set,0.9,0.93,0.87,0.9,0.68,0.58,0.68,0.62
-Logistic Regression,DistilBERT,Validation Set,0.97,0.97,0.98,0.97,0.93,0.94,0.93,0.93
-Logistic Regression,SBERT,Validation Set,0.95,0.95,0.95,0.95,0.84,0.86,0.84,0.82
-Logistic Regression,Count Vectorizer,Test Set,0.8,0.95,0.65,0.77,0.6,0.56,0.6,0.54
-Logistic Regression,TF-IDF,Test Set,0.79,0.94,0.64,0.77,0.59,0.52,0.59,0.51
-Logistic Regression,Word2Vec,Test Set,0.92,0.97,0.88,0.92,0.68,0.59,0.68,0.62
-Logistic Regression,DistilBERT,Test Set,0.97,0.97,0.97,0.97,0.93,0.94,0.93,0.93
-Logistic Regression,SBERT,Test Set,0.96,0.97,0.96,0.96,0.87,0.89,0.87,0.86
-SVM,Count Vectorizer,Validation Set,0.78,0.95,0.6,0.73,0.61,0.54,0.61,0.54
-SVM,TF-IDF,Validation Set,0.8,0.94,0.66,0.77,0.62,0.57,0.62,0.57
-SVM,Word2Vec,Validation Set,0.9,0.94,0.86,0.9,0.67,0.61,0.67,0.6
-SVM,DistilBERT,Validation Set,0.95,0.94,0.97,0.96,0.75,0.8,0.75,0.71
-SVM,SBERT,Validation Set,0.98,0.98,0.99,0.99,0.94,0.94,0.94,0.94
-SVM,Count Vectorizer,Test Set,0.78,0.97,0.6,0.74,0.6,0.57,0.6,0.54
-SVM,TF-IDF,Test Set,0.8,0.94,0.66,0.78,0.61,0.59,0.61,0.56
-SVM,Word2Vec,Test Set,0.92,0.97,0.88,0.92,0.68,0.67,0.68,0.62
-SVM,DistilBERT,Test Set,0.94,0.96,0.94,0.95,0.79,0.82,0.79,0.75
-SVM,SBERT,Test Set,0.98,0.99,0.98,0.98,0.97,0.97,0.97,0.97
-Random Forest,Count Vectorizer,Validation Set,0.79,0.94,0.63,0.76,0.61,0.55,0.61,0.56
-Random Forest,TF-IDF,Validation Set,0.8,0.95,0.63,0.76,0.63,0.58,0.63,0.58
-Random Forest,Word2Vec,Validation Set,0.95,0.97,0.93,0.95,0.72,0.67,0.72,0.69
-Random Forest,DistilBERT,Validation Set,0.95,0.96,0.95,0.96,0.76,0.8,0.76,0.72
-Random Forest,SBERT,Validation Set,0.95,0.96,0.93,0.95,0.78,0.79,0.78,0.74
-Random Forest,Count Vectorizer,Test Set,0.79,0.95,0.63,0.76,0.62,0.59,0.62,0.58
-Random Forest,TF-IDF,Test Set,0.79,0.95,0.64,0.76,0.61,0.58,0.61,0.57
-Random Forest,Word2Vec,Test Set,0.94,0.97,0.91,0.94,0.74,0.72,0.74,0.72
-Random Forest,DistilBERT,Test Set,0.96,0.97,0.95,0.96,0.79,0.79,0.79,0.75
-Random Forest,SBERT,Test Set,0.96,0.97,0.95,0.96,0.82,0.86,0.82,0.79
-AdaBoost,Count Vectorizer,Validation Set,0.7,1.0,0.41,0.58,0.54,0.47,0.54,0.41
-AdaBoost,TF-IDF,Validation Set,0.7,1.0,0.41,0.58,0.53,0.47,0.53,0.4
-AdaBoost,Word2Vec,Validation Set,0.96,0.98,0.94,0.96,0.67,0.66,0.67,0.65
-AdaBoost,DistilBERT,Validation Set,0.96,0.95,0.97,0.96,0.69,0.7,0.69,0.65
-AdaBoost,SBERT,Validation Set,0.95,0.96,0.95,0.96,0.66,0.72,0.66,0.6
-AdaBoost,Count Vectorizer,Test Set,0.71,0.99,0.45,0.62,0.52,0.47,0.52,0.39
-AdaBoost,TF-IDF,Test Set,0.71,0.99,0.45,0.62,0.52,0.46,0.52,0.39
-AdaBoost,Word2Vec,Test Set,0.94,0.97,0.92,0.94,0.66,0.66,0.66,0.65
-AdaBoost,DistilBERT,Test Set,0.95,0.97,0.93,0.95,0.69,0.69,0.69,0.66
-AdaBoost,SBERT,Test Set,0.96,0.96,0.95,0.96,0.68,0.72,0.68,0.63
+Logistic Regression,Count Vectorizer,Validation Set,0.8,0.9469,0.6426,0.7656,0.615,0.564,0.615,0.5501
+Logistic Regression,TF-IDF,Validation Set,0.8033,0.9517,0.6459,0.7695,0.6133,0.5257,0.6133,0.5295
+Logistic Regression,Word2Vec,Validation Set,0.9017,0.9271,0.8754,0.9005,0.6767,0.5807,0.6767,0.6133
+Logistic Regression,DistilBERT,Validation Set,0.9517,0.9539,0.9508,0.9524,0.8383,0.8579,0.8383,0.825
+Logistic Regression,SBERT,Validation Set,0.9517,0.9539,0.9508,0.9524,0.8383,0.8579,0.8383,0.825
+Logistic Regression,Count Vectorizer,Test Set,0.7967,0.9537,0.6478,0.7715,0.6,0.5641,0.6,0.5352
+Logistic Regression,TF-IDF,Test Set,0.7917,0.9447,0.6447,0.7664,0.59,0.5219,0.59,0.5069
+Logistic Regression,Word2Vec,Test Set,0.9217,0.9689,0.8805,0.9226,0.685,0.5949,0.685,0.6194
+Logistic Regression,DistilBERT,Test Set,0.9583,0.9651,0.956,0.9605,0.8733,0.8912,0.8733,0.8608
+Logistic Regression,SBERT,Test Set,0.9583,0.9651,0.956,0.9605,0.8733,0.8912,0.8733,0.8608
+SVM,Count Vectorizer,Validation Set,0.7783,0.9479,0.5967,0.7324,0.61,0.5377,0.61,0.5414
+SVM,TF-IDF,Validation Set,0.8033,0.939,0.6557,0.7722,0.6217,0.5679,0.6217,0.5651
+SVM,Word2Vec,Validation Set,0.9067,0.9399,0.8721,0.9048,0.665,0.5874,0.665,0.6026
+SVM,DistilBERT,Validation Set,0.985,0.9805,0.9902,0.9853,0.9433,0.9449,0.9433,0.9409
+SVM,SBERT,Validation Set,0.985,0.9805,0.9902,0.9853,0.9433,0.9449,0.9433,0.9409
+SVM,Count Vectorizer,Test Set,0.7783,0.9695,0.6006,0.7417,0.605,0.5657,0.605,0.5446
+SVM,TF-IDF,Test Set,0.7983,0.9417,0.6604,0.7763,0.61,0.5882,0.61,0.5593
+SVM,Word2Vec,Test Set,0.9217,0.9656,0.8836,0.9228,0.6883,0.6563,0.6883,0.6288
+SVM,DistilBERT,Test Set,0.9833,0.9904,0.978,0.9842,0.9717,0.9725,0.9717,0.9713
+SVM,SBERT,Test Set,0.9833,0.9904,0.978,0.9842,0.9717,0.9725,0.9717,0.9713
+Random Forest,Count Vectorizer,Validation Set,0.7933,0.9415,0.6328,0.7569,0.61,0.5456,0.61,0.5603
+Random Forest,TF-IDF,Validation Set,0.795,0.9461,0.6328,0.7583,0.63,0.5767,0.63,0.5806
+Random Forest,Word2Vec,Validation Set,0.9517,0.9726,0.9311,0.9514,0.7333,0.683,0.7333,0.6932
+Random Forest,DistilBERT,Validation Set,0.9467,0.9627,0.9311,0.9467,0.78,0.7885,0.78,0.7442
+Random Forest,SBERT,Validation Set,0.9467,0.9627,0.9311,0.9467,0.78,0.7885,0.78,0.7442
+Random Forest,Count Vectorizer,Test Set,0.7867,0.9481,0.6321,0.7585,0.6183,0.5863,0.6183,0.5785
+Random Forest,TF-IDF,Test Set,0.7917,0.9531,0.6384,0.7646,0.615,0.5787,0.615,0.5719
+Random Forest,Word2Vec,Test Set,0.9433,0.9733,0.9182,0.945,0.74,0.7228,0.74,0.7154
+Random Forest,DistilBERT,Test Set,0.9567,0.9679,0.9497,0.9587,0.8167,0.8554,0.8167,0.7918
+Random Forest,SBERT,Test Set,0.9567,0.9679,0.9497,0.9587,0.8167,0.8554,0.8167,0.7918
+Multi-Task Learning,Count Vectorizer,Validation Set,0.8017,0.9429,0.6492,0.7689,0.6167,0.5641,0.6167,0.575
+Multi-Task Learning,TF-IDF,Validation Set,0.8017,0.9429,0.6492,0.7689,0.6233,0.5718,0.6233,0.5795
+Multi-Task Learning,Word2Vec,Validation Set,0.9733,0.9676,0.9803,0.9739,0.7483,0.7177,0.7483,0.729
+Multi-Task Learning,DistilBERT,Validation Set,0.9867,0.9775,0.9967,0.987,0.955,0.9589,0.955,0.9532
+Multi-Task Learning,SBERT,Validation Set,0.9833,0.9712,0.9967,0.9838,0.955,0.9584,0.955,0.9531
+Multi-Task Learning,Count Vectorizer,Test Set,0.7883,0.9283,0.6509,0.7652,0.62,0.6057,0.62,0.5903
+Multi-Task Learning,TF-IDF,Test Set,0.79,0.9286,0.6541,0.7675,0.625,0.6066,0.625,0.5935
+Multi-Task Learning,Word2Vec,Test Set,0.9583,0.9621,0.9591,0.9606,0.755,0.7472,0.755,0.7443
+Multi-Task Learning,DistilBERT,Test Set,0.98,0.9811,0.9811,0.9811,0.9767,0.9774,0.9767,0.9764
+Multi-Task Learning,SBERT,Test Set,0.98,0.9811,0.9811,0.9811,0.9783,0.9791,0.9783,0.9781
