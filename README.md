@@ -1,8 +1,8 @@
-# Project Overview and User Guide
+# 🎯 Project Overview and User Guide
 
 This project aims to detect scam calls using machine learning techniques. It involves data preprocessing, exploratory data analysis, model training, and hyperparameter tuning. This guide provides instructions on how to run the project and the sequence of files to explore.
 
-## User Guide
+## 📖 User Guide
 
 1.  **Set up the environment:**
 
@@ -60,13 +60,13 @@ This project aims to detect scam calls using machine learning techniques. It inv
 	    * For the multi-task learning model: Uses Ray Tune to optimize hyperparameters like learning rate, batch size, and number of epochs
 		* For the SVM model: Uses scikit-learn's GridSearchCV to optimize parameters like C (regularization), kernel type, and gamma
 
-## Sequence of Files to Explore
+## 📌 Sequence of Files to Explore
 
 1.  **`scam_detection/data_exploration.ipynb`:** To perform exploratory data analysis.
 2.  **`scam_detection/scam_detection.ipynb`:** To train and evaluate machine learning models.
 3.  **`scam_detection/hyperparameter-tuning.ipynb`:** To fine-tune the model hyperparameters for the multi-task learning model.
 
-## Machine Learning Algorithms Explored
+## 🤖 Machine Learning Algorithms Explored
 
 The following machine learning algorithms were explored in this project:
 * Logistic Regression
@@ -77,7 +77,41 @@ The following machine learning algorithms were explored in this project:
 * Multi-Task Learning (Neural Network)
 * Naive Bayes with SVM (NB-SVM)
 
-## Folder: `scam_detection`
+## 📂 Folder Structure
+
+```
+INF2008_P1-08/
+├── 📁 scam_detection/
+│   ├── 📜 data_exploration.ipynb  # Exploratory Data Analysis (EDA)
+│   ├── 📜 scam_detection.ipynb  # Model training & evaluation
+│   ├── 📜 hyperparameter-tuning.ipynb  # Hyperparameter tuning
+│   ├── 📊 results.csv  # Model evaluation results
+│   ├── 📊 tuning_diff_results.csv  # Hyperparameter tuning results
+│   ├── 📎 distil_bert_embeddings.npy  # DistilBERT embeddings
+│   ├── 📎 sbert_embeddings.npy  # SBERT embeddings
+│   └── 📃 requirements.txt  # Dependencies
+├── 📁 data/
+│   ├── 📊 combined_scam_dataset.csv  # Initial dataset
+│   ├── 📊 combined_cleaned_merged_dataset.csv  # Merged dataset with Gemini
+│   ├── 📊 combined_scam_dataset_reclassified.csv  # Scam Classes aligned between Gemini and HuggingFace data sources
+│   ├── 📊 generic_changed_dataset.csv  # Non-Scam Classes Reclassified to 'generic'
+│   ├── 📊 Data merging stats.xlsx  # Data merging stats
+│   └── 📜 data_preprocessing.ipynb  # Data preprocessing (For Original HuggingFace data)
+│   └── 📃 requirements.txt  # Dependencies
+├── 📁 synthetic_data/
+│   ├── 📜 synthetic_data_generator.ipynb  # Generate synthetic call logs
+│   ├── 📊 cleaned_call_logs.csv  # Cleaned synthetic data
+│   ├── 📊 non_scam_call_logs.csv  # Non-scam logs in csv
+│   ├── 📊 scam_call_logs.csv  # Scam logs in csv
+│   ├── 📃 requirements.txt  # Dependencies
+│   └── 📁 raw/
+│       ├── 📊 non_scam_call_logs.json  # Raw non-scam data
+│       └── 📊 scam_call_logs.json  # Raw scam data
+└── 📃 README.md  # Project documentation
+```
+
+
+## 📁 Folder: `scam_detection`
 
 This is the main folder for the project. The flow should be `data_exploration.ipynb` > `scam_detection.ipynb` > `hyperparameter-tuning.ipynb`
 
@@ -94,7 +128,7 @@ This is the main folder for the project. The flow should be `data_exploration.ip
 -   **sbert_embeddings.npy**: This file contains the SBERT embeddings generated from the dataset.
 -   **requirements.txt**: This file lists the Python dependencies required to run the scripts and notebooks in this directory.
 
-## Folder: `data`
+## 📁 Folder: `data`
 
 This folder holds the original and processed Hugging Face data.
 
@@ -121,7 +155,7 @@ The flow of how the final dataset was derived:
     *   Edit this notebook to tweak data cleaning steps, handle missing values, and perform feature engineering.
 
 
-## Folder: `synthetic_data`
+## 📁 Folder: `synthetic_data`
 
 This folder holds the Gemini LLM generated data.
 
@@ -131,7 +165,7 @@ This folder holds the Gemini LLM generated data.
 -   **scam_call_logs.csv**: This file contains call logs that are identified as scam calls. Each entry includes the dialogue, labels, and type of scam.
 -   **requirements.txt**: This file lists the Python dependencies required to run the scripts and notebooks in this directory.
 
-### Subfolder: `synthetic_data/raw`
+### 📁 Subfolder: `synthetic_data/raw`
 
 -   **non_scam_call_logs.json**: This file contains the raw JSON data for legitimate (non-scam) call logs. Each entry includes the call category, language, and dialogue.
 -   **scam_call_logs.json**: This file contains the raw JSON data for scam call logs. Each entry includes the scam category, whether the victim was scammed, language, and dialogue.
