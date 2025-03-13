@@ -102,6 +102,19 @@ This is the main folder for the project. The flow should be `data_exploration.ip
 
 This folder holds the original and processed Hugging Face data.
 
+#### Dataset Flow
+The flow of how the final dataset was derived:
+
+| Step | Filename | Description |
+|------|-------------------------------|--------------------------------------------------------------|
+| 1️⃣  | **combined_scam_dataset.csv** | The initial Gemini-generated dataset. |
+| 2️⃣  | **combined_cleaned_merged_dataset.csv** | The dataset post-merging with the initial Hugging Face dataset, with scam and not scam classes from both data sources preserved and formatted |
+| 3️⃣  | **combined_scam_dataset_reclassified.csv** | The dataset post-merging, with scam classes aligned between both Gemini and HuggingFace data sources. |
+| 4️⃣  | **generic_changed_dataset.csv** | The dataset post-merging, with non-scam classes reclassified to 'generic'. |
+| 📊  | **Data merging stats.xlsx** | Statistics and details of the merging and data combination process. |
+| 📈  | **data_preprocessing.ipynb** | Exploratory Data Analysis (EDA) of the initial dataset. |
+
+
 -   **data_preprocessing.ipynb**: This Jupyter notebook handles data ingestion, cleaning, and preprocessing for further use in downstream tasks. This notebook performs the following steps:
     *   Loads data from various CSV files (Hugging Face datasets).
     *   Adds a 'type' column to the dataset based on keywords found in the dialogue.
@@ -110,11 +123,6 @@ This folder holds the original and processed Hugging Face data.
     *   Converts the 'dialogue' column to lowercase.
     *   Exports the processed data to a CSV file.
     *   Edit this notebook to tweak data cleaning steps, handle missing values, and perform feature engineering.
--   **combined_scam_dataset.csv**: This file contains the combined dataset of scam calls before reclassification.
--   **combined_cleaned_merged_dataset.csv**: This file contains the merged and cleaned dataset from various sources, ready for analysis.
--   **combined_scam_dataset_Reclassified.csv**: This file contains the reclassified scam dataset after additional processing and reclassification.
--   **Data merging stats.xlsx**: This Excel file contains statistics and details about the data merging process.
--   **generic_changed_dataset.csv**: This file contains the **final** generic dataset with changes applied during preprocessing.
 
 
 ## Folder: `synthetic_data`
