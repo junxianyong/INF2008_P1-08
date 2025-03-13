@@ -49,11 +49,13 @@ This project aims to detect scam calls using machine learning techniques. It inv
 3.  **Model Training and Evaluation:**
 
     *   In the `scam_detection` folder, open the `scam_detection.ipynb` notebook.
-    *   Run the notebook to train and evaluate machine learning models for scam detection. This step involves feature extraction, model selection, training, and evaluation.
+    *   Run the notebook to train and evaluate machine learning models for scam detection.
+    *   This step involves data pre-processing, feature extraction, data-splitting,  training, and evaluation.
 
 4.  **Hyperparameter Tuning:**
 
     *   Once the top few models are picked out, the model hyperparameters can be tuned to gain improvements. Open the `hyperparameter-tuning.ipynb` notebook in the `scam_detection` folder.
+    *   For this case, the best-performing embedding-algorithm combinations were: **SVM-SBERT, MultiTask-SBERT, MultiTask-BERT**
     *   Run the notebook to perform hyperparameter tuning. This step optimizes the model performance by searching for the best hyperparameter values.
 	    * For the multi-task learning model: Uses Ray Tune to optimize hyperparameters like learning rate, batch size, and number of epochs
 		* For the SVM model: Uses scikit-learn's GridSearchCV to optimize parameters like C (regularization), kernel type, and gamma
@@ -62,23 +64,17 @@ This project aims to detect scam calls using machine learning techniques. It inv
 
 1.  **`scam_detection/data_exploration.ipynb`:** To perform exploratory data analysis.
 2.  **`scam_detection/scam_detection.ipynb`:** To train and evaluate machine learning models.
-3.  **`scam_detection/hyperparameter-tuning.ipynb` (Optional):** To fine-tune the model hyperparameters for the multi-task learning model.
+3.  **`scam_detection/hyperparameter-tuning.ipynb`:** To fine-tune the model hyperparameters for the multi-task learning model.
 
 ## Machine Learning Algorithms Explored
 
 The following machine learning algorithms were explored in this project:
 * Logistic Regression
-
 * Support Vector Machine (SVM)
-
 * Random Forest
-
 * AdaBoost
-
 * Policy-based Reinforcement Learning (Neural Network)
-
 * Multi-Task Learning (Neural Network)
-
 * Naive Bayes with SVM (NB-SVM)
 
 ## Folder: `scam_detection`
@@ -93,7 +89,7 @@ This is the main folder for the project. The flow should be `data_exploration.ip
     *   Trains and evaluates machine learning models for scam detection.
 -   **hyperparameter-tuning.ipynb**: This notebook is used for hyperparameter tuning of machine learning models. It uses Ray Tune to optimize hyperparameters for the multi-task neural network model, and scikit-learn's GridSearchCV to optimize the hyperparameters for SVM model.
 -   **results.csv**: This file contains the results of the model evaluations as part of training the different embedding-algorithm combinations.
--   **diff_results.csv**: This file contains the results of the differences calculated during the hyperparameter tuning.
+-   **tuning_diff_results.csv**: This file contains the results of the differences calculated during the hyperparameter tuning.
 -   **distil_bert_embeddings.npy**: This file contains the DistilBERT embeddings generated from the dataset.
 -   **sbert_embeddings.npy**: This file contains the SBERT embeddings generated from the dataset.
 -   **requirements.txt**: This file lists the Python dependencies required to run the scripts and notebooks in this directory.
